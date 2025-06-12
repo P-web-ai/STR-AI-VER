@@ -3,10 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shikhar</title>
+    <title>Portfolio</title>
+    <style>
+        * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    text-align: center;
+    padding: 30px 10px;
+    background-color: gray;
+}
+.container{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px ;
+}
+.image{
+    border-radius: 50%;
+    width: 120px;
+    max-width: 60%;
+    transition: 0.5s ease;
+    display: block;
+    margin: auto;
+}
+.image:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px;
+}
+.name{
+    font-size: 30px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: aqua;
+    display: inline-block;
+    padding: 10px, 15px;
+    border-radius: 5px;
+}
+.about{
+    color: rgb(86, 72, 245);
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+    transition: 0.5s ease, color 0.3s ease;
+}
+.about:hover{
+    transform: scale(1.1);
+    color: darkblue;
+}
+.about-section{
+    margin-top: 15px;
+    text-align: left;
+}
+.section-title{
+    background-color: aquamarine;
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
+    font-size: medium;
+}
+.button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(247, 8, 8);
+    transition: 0.5s ease;
+}
+.button:hover{
+    background-color: black;
+    transform: scale(1.1);
+}
+@media(max-width: 770px){
+    .container {
+        max-width: 25px;
+        padding: 8px 12px;
+    }
+    .about {
+        font-size: 16px;
+    }
+    ul {
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+    .contact {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .image {
+        width: 100px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    ul {
+        font-size: 13px;
+    }
+}
+    </style>
 </head>
 <body>
-    <p>I am web developer</p>
-    <h1>Hello Shikhar</h1>
+    <div class="container">
+    <img class="image" src="my_photo.jpg" alt="My Photo">
+    <h1 class="name">Shikhar</h1>
+    <details class="about-section">
+        <summary><strong class="about">About me</strong></summary>
+        <p>I am 2nd year BTech CSE student in NITK Surathkal and I am a bigginer in web dev</p>
+    </details>
+    <div class="skills">
+        <h3 class="section-title">Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </div>
+    <div class="projects">
+        <h3 class="section-title">Projects</h3>
+        <ul>
+            <li>Portfolio card</li>
+            <li>Pricing table</li>
+        </ul>
+    </div>
+    <div class="button-hover">
+        <button class="button">Follow</button>
+    </div>
+    <div class="contact">
+        <h3 class="section-title">Contact Me</h3>
+        <p>Email: sachanshikhar17@gmail.com</p>
+        <p>Phone: 9559583981</p>
+    </div>
+    </div>
 </body>
 </html>
